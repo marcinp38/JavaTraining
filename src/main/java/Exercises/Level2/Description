@@ -1,0 +1,42 @@
+Utwórz aplikację do zarządzania sklepem zoologicznym, który będzie miał następujące funkcje:
+
+Dodawanie zwierząt do sklepu.
+Usuwanie zwierząt ze sklepu.
+Wyświetlanie dostępnych zwierząt w sklepie.
+
+Klasy:
+
+Zwierze:
+Atrybuty: nazwa, gatunek, cena.
+Metody: gettery, settery oraz toString()
+
+SklepZoologiczny:
+Atrybuty: listaZwierzat (lista obiektów klasy Zwierze).
+Metody: dodajZwierze(Zwierze zwierze), usunZwierze(String nazwa), wyswietlDostepneZwierzeta()
+
+Przebieg działania:
+Użytkownik powinien mieć możliwość interakcji z programem przez konsolę:
+
+Wybierz opcję:
+1 - Dodaj zwierzę do sklepu.
+2 - Usuń zwierzę ze sklepu.
+3 - Wyświetl dostępne zwierzęta.
+4 - Zakończ program.
+
+Jeśli użytkownik wybierze opcję dodawania zwierzęcia, powinien podać nazwę, gatunek oraz cenę zwierzęcia.
+
+Jeśli użytkownik wybierze opcję usuwania zwierzęcia, powinien podać nazwę zwierzęcia, które chce usunąć.
+
+Jeśli użytkownik wybierze opcję wyświetlania, program powinien pokazać listę wszystkich dostępnych zwierząt wraz z ich informacjami.
+
+Program powinien działać w pętli, dopóki użytkownik nie wybierze opcji zakończenia programu.
+
+Wskazówki:
+
+Użyj klasy Scanner do interakcji z użytkownikiem.
+Pamiętaj o obsłudze potencjalnych błędów, np. próba usunięcia zwierzęcia, którego nie ma na liście.
+Rozszerzenie (opcjonalne):
+
+Dodaj możliwość sortowania listy zwierząt według ceny.
+Dodaj możliwość wyszukiwania zwierząt według gatunku.
+Mam nadzieję, że to zadanie poziomu 2 pozwoli uczniom na lepsze zrozumienie interakcji między obiektami i praktyczne zastosowanie kompozycji klas w Javie!
