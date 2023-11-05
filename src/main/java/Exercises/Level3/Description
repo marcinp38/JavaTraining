@@ -1,0 +1,49 @@
+Zadanie: System rezerwacji biletów do zoo
+
+Cel: Wprowadzenie do koncepcji obsługi wyjątków, plików, a także kontynuacja pracy z klasami i obiektami.
+
+Opis:
+
+Utwórz aplikację do obsługi systemu rezerwacji biletów do zoo, który będzie przechowywał dane w pliku
+i pozwoli na zarządzanie rezerwacjami.
+
+Klasy:
+
+    Bilet:
+        Atrybuty: typBiletu (dziecko, dorosły, senior), cena, dataWizyty.
+        Metody: gettery, settery oraz toString().
+
+    SystemRezerwacji:
+        Atrybuty: listaBiletow (lista obiektów klasy Bilet).
+        Metody: dodajRezerwacje(Bilet bilet), usunRezerwacje(String typBiletu, LocalDate dataWizyty),
+        wyswietlRezerwacje(), zapiszDoPliku(), wczytajZPliku().
+
+Funkcjonalności:
+    Dodawanie rezerwacji biletów do systemu.
+    Usuwanie rezerwacji biletów.
+    Wyświetlanie wszystkich rezerwacji.
+    Zapisywanie stanu rezerwacji do pliku.
+    Odczytywanie stanu rezerwacji z pliku.
+
+Przebieg działania:
+Użytkownik powinien mieć możliwość interakcji z programem przez konsolę:
+Wybierz opcję:
+
+1 - Dodaj rezerwację biletu.
+2 - Usuń rezerwację biletu.
+3 - Wyświetl wszystkie rezerwacje.
+4 - Zapisz stan rezerwacji do pliku.
+5 - Wczytaj stan rezerwacji z pliku.
+6 - Zakończ program.
+
+Program powinien obsługiwać wyjątki, np. niepoprawny format danych przy dodawaniu rezerwacji, błędy IO przy pracy z plikami itd.
+
+Wskazówki:
+    Do obsługi plików wykorzystaj java.io lub java.nio.
+    Do formatowania i parsowania dat użyj klas z pakietu java.time.
+    Aby ułatwić sobie zadanie, możesz zapisywać dane w formacie CSV, co uprości ich późniejsze wczytywanie.
+
+Rozszerzenie (opcjonalne):
+    Dodaj walidację danych wejściowych (np. data wizyty nie może być w przeszłości).
+    Dodaj możliwość wyszukiwania rezerwacji po dacie wizyty lub typie biletu.
+    Utwórz graficzny interfejs użytkownika (GUI) za pomocą JavaFX lub Swing.
