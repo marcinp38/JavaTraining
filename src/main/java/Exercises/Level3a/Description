@@ -1,0 +1,55 @@
+Utwórz prosty system zarządzania biblioteką,
+który pozwoli na dodawanie książek do katalogu, wypożyczanie ich czytelnikom i zwracanie.
+
+Klasy:
+    Ksiazka:
+        Atrybuty: tytul, autor, rokWydania, czyWypozyczona.
+        Metody: gettery, settery, toString().
+
+    Czytelnik:
+        Atrybuty: imie, nazwisko, idCzytelnika, wypozyczoneKsiazki (lista książek).
+        Metody: gettery, settery, metody do wypożyczania i zwracania książek, toString().
+
+    Biblioteka:
+        Atrybuty: katalogKsiazek (lista książek), zarejestrowaniCzytelnicy (lista czytelników).
+        Metody: dodajKsiazke(Ksiazka ksiazka), zarejestrujCzytelnika(Czytelnik czytelnik),
+        wypozyczKsiazke(String tytul, int idCzytelnika), zwrocKsiazke(String tytul, int idCzytelnika),
+        wyszukajKsiazke(String tytul).
+
+Funkcjonalności:
+    Dodawanie książek do katalogu biblioteki.
+    Rejestrowanie nowych czytelników.
+    Wypożyczanie książek czytelnikom (książka nie może być wypożyczona, jeśli już jest wypożyczona).
+    Zwracanie książek do biblioteki.
+    Wyszukiwanie książek w katalogu po tytule.
+
+Przebieg działania:
+    Użytkownik powinien mieć możliwość interakcji z programem przez konsolę:
+        Wybierz opcję:
+
+        1 - Dodaj książkę do katalogu.
+        2 - Zarejestruj czytelnika.
+        3 - Wypożycz książkę.
+        4 - Zwróć książkę.
+        5 - Wyszukaj książkę w katalogu.
+        6 - Wyświetl dostępne książki.
+        7 - Zakończ program.
+
+W przypadku wypożyczenia i zwrotu książki, system powinien sprawdzać,
+czy książka nie jest już wypożyczona i czy czytelnik ma prawo ją zwrócić.
+
+Program powinien obsługiwać wyjątki, np. próba wypożyczenia książki,
+która nie istnieje w katalogu, czy próba rejestracji czytelnika o tym samym ID.
+
+Wskazówki:
+    Użyj mapy do szybkiego wyszukiwania czytelników i książek po kluczu (np. ID czytelnika, tytuł książki).
+    Przy rejestracji nowego czytelnika, upewnij się, że ID jest unikalne.
+    Przy dodawaniu książki, sprawdź, czy książka o takim samym tytule już istnieje w katalogu.
+    Zastosuj Optional do obsługi sytuacji, gdy wyszukiwana książka lub czytelnik nie istnieje.
+
+Rozszerzenie (opcjonalne):
+    Dodaj możliwość wyświetlenia wszystkich książek wypożyczonych przez danego czytelnika.
+    Zaimplementuj zapisywanie i wczytywanie stanu biblioteki do/z pliku.
+
+To zadanie poziomu 3 pozwoli uczniom na praktyczne wykorzystanie zaawansowanych funkcji Javy
+oraz lepsze zrozumienie zarządzania stanem w aplikacji.
