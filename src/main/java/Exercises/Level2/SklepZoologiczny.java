@@ -1,9 +1,6 @@
 package Exercises.Level2;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class SklepZoologiczny {
   private List<Zwierze> listaZwierzat = new ArrayList<>();
@@ -55,7 +52,9 @@ public class SklepZoologiczny {
           czyGatunekJestNaLiscie = true;
         }
       }
-
+    if (!czyGatunekJestNaLiscie) {
+      throw new NoSuchElementException("Nie znaleziono zwierzęcia o podanym gatunku");
+    }
 
   }
 }
